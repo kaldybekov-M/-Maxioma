@@ -12,20 +12,15 @@
 		</p>
 	</div>
 	<div class="reviews__list">
-		<form id="feedbackForm">
-			<input type="text" id="name" name="name" placeholder="ФИО" />
-			<input
-				type="company"
-				id="company"
-				name="company"
-				placeholder="Компания"
-			/>
-			<input type="email" id="email" name="email" placeholder="Email" />
+		<form action="../../php/main.php " method="post">
+			<input type="text" id="name" name="name" placeholder="ФИО" required />
+			<input type="company" name="company" placeholder="Компания" required />
+			<input type="email" name="email" placeholder="Email" required />
 
 			<textarea
-				id="message"
 				name="message"
 				placeholder="Выши отзывы и предложения"
+				required
 			></textarea>
 
 			<a class="submit" href="#">Отправить</a>
